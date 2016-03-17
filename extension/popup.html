@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yopmail helper</title>
+    <link rel="stylesheet" href="css/material.min.css"/>
+    <style type="text/css">
+        html, body {
+            min-width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div>
+        <div id="online" style="float: left; margin-left: 2%;"></div>
+        <div id="updated" style="float: right; margin-right: 2%;"></div>
+    </div>
+    <table class="mdl-data-table mdl-data-table--selectable mdl-shadow--2dp">
+        <thead>
+        <tr>
+            <th class="mdl-data-table__cell--non-numeric"></th>
+            <th class="mdl-data-table__cell--non-numeric" data-resource="realAddress"></th>
+            <th class="mdl-data-table__cell--non-numeric" data-resource="bytesReceived"></th>
+            <th class="mdl-data-table__cell--non-numeric" data-resource="bytesSent"></th>
+            <th class="mdl-data-table__cell--non-numeric" data-resource="virtualAddress"></th>
+            <th class="mdl-data-table__cell--non-numeric" data-resource="since"></th>
+        </tr>
+        </thead>
+        <tbody id="connectionList">
+        </tbody>
+    </table>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <!--<script type="text/javascript" src="js/material.min.js"></script>-->
+    <script type="text/javascript" src="js/popup.js"></script>
+</div>
+</body>
+</html>

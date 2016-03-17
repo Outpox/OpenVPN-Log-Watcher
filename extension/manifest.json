@@ -1,0 +1,11 @@
+{
+	"manifest_version": 2,
+
+	"name": "OpenVPN Status",
+	"description": "Display openvpn-status.log content",
+	"version": "1.0",
+	"browser_action": {
+		"default_popup": "popup.html"
+		},
+	"default_locale": "en"
+}

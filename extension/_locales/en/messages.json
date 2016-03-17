@@ -1,0 +1,26 @@
+{
+	"commonName": {
+		"message": "Common Name"
+	},
+	"realAddress": {
+		"message": "Real Address"
+	},
+	"bytesReceived": {
+		"message": "Bytes Received"
+	},
+	"bytesSent": {
+		"message": "Bytes Sent"
+	},
+	"since": {
+		"message": "Connected Since"
+	},
+	"virtualAddress": {
+		"message": "Virtual Address"
+	},
+	"lastRef": {
+		"message": "Last Ref"
+	},
+	"reload": {
+		"message": "Reload"
+	}
+}
