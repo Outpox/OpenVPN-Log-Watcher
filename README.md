@@ -9,7 +9,7 @@
 
 ####Clients
 * You first need to set some parameters
- * Open `index.js` and set the url at line 37
+ * Open `extension/js/popup.js` and set the url at line 37
  * If you want to change the key, remember to change it as well in `index.php` at line 8
 * Go to `chrome://extensions/`
 * Tick `Developper mode` if not already
