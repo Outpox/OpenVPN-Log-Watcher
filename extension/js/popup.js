@@ -7,13 +7,13 @@ getJson(json => {
 });
 
 function init(json) {
-    console.log(json);
     if (json.status === 'success') {
         var onlineUsers = $('#online')[0];
         var updated = $('#updated')[0];
         var connectionList = $('#connectionList')[0];
         var tooltips = $('#tooltips')[0];
-        onlineUsers.innerText = (json.users.length < 2) ? json.users.length + ' user online' : json.users.length + ' users online';
+        var users = json.users.length;
+        onlineUsers.innerText = (users < 2) ? chrome.i18n.getMessage("onlineUser", [users]) : chrome.i18n.getMessage("onlineUsers", [users]);
         updated.innerText = json.updated;
 
         for (var i = 0; i < json.users.length; i++) {

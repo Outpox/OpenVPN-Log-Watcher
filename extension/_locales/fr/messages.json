@@ -1,20 +1,32 @@
 {
-	"generateButton": {
-		"message": "Générer une nouvelle adresse"
+	"commonName": {
+		"message": "Nom Commun"
 	},
-	"copy": {
-		"message": "Copier"
+	"realAddress": {
+		"message": "Adresse Réelle"
 	},
-	"delete": {
-		"message": "Supprimer"
+	"bytesReceived": {
+		"message": "Reçu"
 	},
-	"neverUsed": {
-		"message": "Jamais"
+	"bytesSent": {
+		"message": "Envoyé"
 	},
-	"lastUse": {
-		"message": "Dernière utilisation"
+	"since": {
+		"message": "Connecté Depuis"
 	},
-	"adress": {
-		"message": "Adresse"
+	"virtualAddress": {
+		"message": "Adresse Virtuelle "
+	},
+	"lastRef": {
+		"message": "Dernière Référence"
+	},
+	"reload": {
+		"message": "Rafraîchir"
+	},
+	"onlineUser": {
+		"message": "$1 utilisateur en ligne"
+	},
+	"onlineUsers": {
+		"message": "$1 utilisateurs en ligne"
 	}
 }

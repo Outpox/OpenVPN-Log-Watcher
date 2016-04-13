@@ -6,10 +6,10 @@
 		"message": "Real Address"
 	},
 	"bytesReceived": {
-		"message": "Bytes Received"
+		"message": "Received"
 	},
 	"bytesSent": {
-		"message": "Bytes Sent"
+		"message": "Sent"
 	},
 	"since": {
 		"message": "Connected Since"
@@ -22,5 +22,11 @@
 	},
 	"reload": {
 		"message": "Reload"
+	},
+	"onlineUser": {
+		"message": "$1 user online"
+	},
+	"onlineUsers": {
+		"message": "$1 users online"
 	}
 }
