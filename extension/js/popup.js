@@ -34,7 +34,7 @@ function init(json) {
 }
 
 function getJson(callback) {
-    $.get('http://62.210.236.193/api/openvpn/index.php', {key: 'l4l4l4l4'}, json => {
+    $.get('SET URL HERE', {key: 'l4l4l4l4'}, json => {
         callback(json);
     });
 }
