@@ -1,7 +1,7 @@
 const APIURL = 'SET URL API HERE';
 //Example: 'http://localhost/openvpnapi/'
 //Set the API key in the variable below, not in the URL.
-const APIKEY = 'l4l4l4';
+const APIKEY = 'l4l4l4l4';
 //It must match what you set in index.php on your server.
 
 $(function () {
