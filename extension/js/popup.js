@@ -1,10 +1,22 @@
+const APIURL = 'SET URL API HERE';
+//Example: 'http://localhost/openvpnapi/'
+//Set the API key in the variable below, not in the URL.
+const APIKEY = 'l4l4l4';
+//It must match what you set in index.php on your server.
+
 $(function () {
+    translate();
+    getJson(json => {
+        init(json);
+    });
 });
 
-getJson(json => {
-    translate();
-    init(json);
-});
+setInterval(()=>{
+    getJson(json => {
+        init(json);
+    });
+}, 10000);
+//Can't go under 10s for the refresh rate since the file openvpn-status.log is refreshed every 10s server side.
 
 function init(json) {
     if (json.status === 'success') {
@@ -13,9 +25,11 @@ function init(json) {
         var connectionList = $('#connectionList')[0];
         var tooltips = $('#tooltips')[0];
         var users = json.users.length;
+
         onlineUsers.innerText = (users < 2) ? chrome.i18n.getMessage("onlineUser", [users]) : chrome.i18n.getMessage("onlineUsers", [users]);
         updated.innerText = json.updated;
 
+        $(connectionList).empty();
         for (var i = 0; i < json.users.length; i++) {
             var user = json.users[i];
             var tr = $('<tr></tr>');
@@ -34,7 +48,7 @@ function init(json) {
 }
 
 function getJson(callback) {
-    $.get('SET URL HERE', {key: 'l4l4l4l4'}, json => {
+    $.get(APIURL, {key: APIKEY}, json => {
         callback(json);
     });
 }
